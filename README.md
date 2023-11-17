@@ -1,6 +1,7 @@
-![Screenshot of the interface of the Sugar Dark theme for SDDM](Previews/Mockup.jpg "The default interface of the Sugar Dark theme for SDDM")
 
-# Sugar Dark login theme for SDDM
+# Dark Chocolate login theme for SDDM
+
+> Forked from [sugar dark](https://github.com/MarianArlt/sddm-sugar-dark)
 
 Sugar is extremely customizable and so sweet it will probably cause you diabetes just from looking at it. Sweeten the login experience for your users, your family and yourself. Sugar is cross platform and all about user experience and functionality.
 With those principles in mind Sugar was written completely from scratch making it clean and simple not only by looks but by design too.  
@@ -29,9 +30,11 @@ If for some reason you cannot find the category named "Login Screen (SDDM)" in y
 ###### From other desktop environments
 
 [Download the tar archive from openDesktop](https://www.opendesktop.org/p/1272122) and extract the contents to the theme directory of SDDM *(change the path for the downloaded file if necessary)*:
+
+```bash
+sudo tar -xzvf ~/Downloads/sugar-dark.tar.gz -C /usr/share/sddm/themes
 ```
-$ sudo tar -xzvf ~/Downloads/sugar-dark.tar.gz -C /usr/share/sddm/themes
-```
+
 This will extract all the files to a folder called "sugar-dark" inside of the themes directory of SDDM.  
 
 After that you will have to point SDDM to the new theme by editing its config file, preferrably at `/etc/sddm.conf.d/sddm.conf` *(create if necessary)*. You can take the default config file of SDDM as a reference: `/etc/sddm.conf/usr/lib/sddm/sddm.conf.d/sddm.conf`.  
