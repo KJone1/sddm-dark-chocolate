@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## 2023-11-25
+
+- Add `defaultdisplay` to input component to avoid extra text in combobox.
+- Removed auto capitalization of username.
+- Update preview image to be clearer.
+
 ## 2023-11-17
 
 - Update config file values.
