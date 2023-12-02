@@ -1,4 +1,4 @@
-.PHONY: help lint play check pwd
+.PHONY: help test install
 
 DEFAULT: help
 
