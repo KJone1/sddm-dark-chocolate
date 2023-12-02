@@ -1,4 +1,4 @@
-.PHONY: help test install
+.PHONY: help test install clean
 
 DEFAULT: help
 
@@ -17,4 +17,6 @@ install: ## Copy theme to sddm theme folder (requires sudo privileges).
 	@sudo $$(which cp) -rf $(PWD) $(THEME_DST)
 	@echo -e " >> Copied \033[36m$(PWD)\033[0m to \033[36m$(THEME_DST)\033[0m"
 
-
+clean: ## Remove theme from sddm theme folder (requires sudo privileges).
+	@sudo rm -rf $(THEME_DST)
+	@echo -e " >> Removed \033[36m$(THEME_DST)\033[0m"
