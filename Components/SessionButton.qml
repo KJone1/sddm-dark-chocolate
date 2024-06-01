@@ -19,7 +19,6 @@
 
 import QtQuick 2.11
 import QtQuick.Controls 2.4
-//import QtGraphicalEffects 1.0
 
 Item {
     id: sessionButton
@@ -101,15 +100,6 @@ Item {
                 radius: config.RoundCorners / 2
                 color: "#444"
                 layer.enabled: true
-//                layer.effect: DropShadow {
-//                    transparentBorder: true
-//                    horizontalOffset: 0
-//                    verticalOffset: 0
-//                    radius: 100
-//                    samples: 201
-//                    cached: true
-//                    color: "#88000000"
-//                }
             }
 
             enter: Transition {

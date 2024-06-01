@@ -20,7 +20,6 @@
 import QtQuick 2.11
 import QtQuick.Layouts 1.11
 import QtQuick.Controls 2.4
-//import QtGraphicalEffects 1.0
 
 Column {
     id: inputContainer
@@ -73,17 +72,21 @@ Column {
             }
 
             indicator: Button {
-                    id: usernameIcon
-                    width: selectUser.height * 0.8
-                    height: parent.height
-                    anchors.left: parent.left
-                    anchors.verticalCenter: parent.verticalCenter
-                    anchors.leftMargin: selectUser.height * 0.125
-                    icon.height: parent.height * 0.25
-                    icon.width: parent.height * 0.25
-                    enabled: false
-                    icon.color: root.palette.text
-                    icon.source: Qt.resolvedUrl("../Assets/User.svgz")
+                id: usernameIcon
+                width: selectUser.height * 0.8
+                height: parent.height
+                anchors.left: parent.left
+                anchors.verticalCenter: parent.verticalCenter
+                anchors.leftMargin: selectUser.height * 0.125
+                icon.height: parent.height * 0.25
+                icon.width: parent.height * 0.25
+                enabled: false
+                icon.color: root.palette.text
+                icon.source: Qt.resolvedUrl("../Assets/User.svgz")
+                background: Rectangle {
+                    color: "transparent"
+                }
+
             }
 
             background: Rectangle {
@@ -110,15 +113,6 @@ Column {
                     radius: config.RoundCorners / 2
                     color: "#444"
                     layer.enabled: true
-//                    layer.effect: DropShadow {
-//                        transparentBorder: true
-//                        horizontalOffset: 0
-//                        verticalOffset: 0
-//                        radius: 100
-//                        samples: 201
-//                        cached: true
-//                        color: "#88000000"
-//                    }
                 }
 
                 enter: Transition {
